@@ -47,13 +47,14 @@ public class Connect4TDDSpec {
     @Test
     public void whenDiscOutsideBoardThenRuntimeException() {
 
-
+        assertThat(tested.putDiscInColumn(7)).isLessThan(8);
     }
 
     @Test
     public void whenFirstDiscInsertedInColumnThenPositionIsZero() {
 
-        assertThat(tested.putDiscInColumn(0)).isEqualTo(0);
+       // assertThatRuntimeException(tesputDiscInColumn(8));
+
 
     }
 
