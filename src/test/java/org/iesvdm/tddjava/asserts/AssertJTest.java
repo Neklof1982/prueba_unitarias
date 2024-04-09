@@ -7,15 +7,19 @@ import java.util.*;
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 
+//Nota
 
 public class AssertJTest {
-
+    //Monadas, encadenamiento de metodos
+    // este metod es mucho más declarativo
     void whenBooleanIsTrue() {
         assertThat(1 == 1).isTrue();
     }
 
     @Test
     void whenBooleanIsFalse() {
+        //Monadas, encadenamiento de metodos
+        // este metod es mucho más declarativo
         boolean flag =false;
         assertThat(flag).isFalse();
     }
@@ -41,7 +45,7 @@ public class AssertJTest {
     void shouldBeEqual() {
         final Integer ACTUAL = 9;
         final Integer EXPECTED = 9;
-
+        // recuerda que dentro de parentesis pulsas crtl + P y se puede ver el estado de ACTUAL y EXPECTED
         assertThat(ACTUAL).isEqualTo(EXPECTED);
 
     }
@@ -69,7 +73,7 @@ public class AssertJTest {
     void shouldContainSameIntegers() {
         final int[] ACTUAL = new int[]{2, 5, 7};
         final int[] EXPECTED = new int[]{2, 5, 7};
-
+        // igualar dos cadenas ques on iguales
         assertThat(ACTUAL).containsExactly(EXPECTED);
 
     }

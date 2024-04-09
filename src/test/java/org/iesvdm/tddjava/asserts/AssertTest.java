@@ -1,14 +1,24 @@
 package org.iesvdm.tddjava.asserts;
 
 
+//HYA VARIAS VERSIONES DE JUNIT: 3, 4, 5
+
+// VAMOS A ESTAR TRABAJANDO EN EN VERSION JUNIT 5 -> VERSION JUPITER
+// TIENE SOPORTE PARA JAVA 08 FUNDAMENTALMENTE LAMBDAS
 
 import org.junit.jupiter.api.Test;
 import org.testng.IObjectFactory2;
 
 import java.util.*;
 
+//IMPORT STACIC  ¿qué hace>?
+// no hace falta instaciar un objeto para poder ejecutarlo
+// tiene una naturalez global
+// en este caso se esta trayendo el codigo estatico de la clase Assertions
 import static org.junit.jupiter.api.Assertions.*;
-
+// manteniendo crtl ensima de asertions se abre la navegación
+// tenemos que pulsar download resoruces
+// tenemos dos modelos reader y flecha
 
 /**
 <p>
@@ -43,23 +53,34 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 
 
+
+// Existe la convección de que las clases se llaman con el sufijo test
+// NombreCosaBajoTesteoTest, *Test
+
 public class AssertTest {
 
+    //La clase de test tiene una sería de métodos que implementa pruebas parciales
+    // de interes
+    // es fundamental que el método esté anotado conla anotacion  @Test
     @Test
     void whenBooleanIsTrue() {
+
+        //El assert es una afirmarción que ddebe cumplirse para que este test sea valido
         assertTrue(1 == 1);
     }
-
+// pulsando el boton play podemos ver que funciona, si cambiamos datos dara error y te dice
+    // lo que se espera y en el estado en que esta
     @Test
     void whenBooleanIsFalse() {
         boolean flag =false;
+        //comprueba que sea igual al flag
         assertFalse(flag);
     }
 
     @Test
     void whenObjectIsNull() {
         Object nullObj = null;
-
+        //comprueba que la referencia apunta a null
         assertNull(nullObj);
 
     }
@@ -67,7 +88,7 @@ public class AssertTest {
     @Test
     void whenObjectIsNotNull() {
         Object obj = new Object();
-
+        //comprueba que la referencia no apunta a null
         assertNotNull(obj);
 
     }
@@ -77,6 +98,11 @@ public class AssertTest {
     void shouldBeEqual() {
         final Integer ACTUAL = 9;
         final Integer EXPECTED = 9;
+        //integer es una clase imutable, las dos referencia apuntan al mismo sitio
+        //siempre que quiero comparar igualdad de objeto (usar siempre Equals)
+        //no tipo primito (solo objetos) no puede ser con igualdad
+        // ejemplo: Boolean esIgual = ACTUAL == EXPECTED; esto es erroneo
+        // si fuera String  "hola" Sería igual, pero "HOLA" Y "hola", son diferentes.
 
         assertEquals(EXPECTED, ACTUAL);
 
@@ -86,7 +112,7 @@ public class AssertTest {
     void shouldReferToSameObject() {
         final Object ACTUAL = 9;
         final Object EXPECTED = ACTUAL;
-
+        // compara las dos "REFERENCIAS"
         assertSame(EXPECTED, ACTUAL);
 
     }
@@ -107,7 +133,7 @@ public class AssertTest {
     void shouldContainSameIntegers() {
         final int[] ACTUAL = new int[]{2, 5, 7};
         final int[] EXPECTED = new int[]{2, 5, 7};
-
+        //compara los Arrays posición a posición que sean iguales
         assertArrayEquals(EXPECTED, ACTUAL);
 
     }
@@ -118,7 +144,7 @@ public class AssertTest {
         Object second = new Object();
 
         List list = Arrays.asList(first, second);
-
+        //verifica que el tamaño sea de 2
         assertEquals(list.size(), 2);
 
     }
@@ -138,7 +164,7 @@ public class AssertTest {
         Object second = new Object();
 
         List list = Arrays.asList(first, second);
-
+        //colecciones tienen que ser iterables, es decir comparar posición a posición
         assertIterableEquals(list, Arrays.asList(first, second));
     }
 
