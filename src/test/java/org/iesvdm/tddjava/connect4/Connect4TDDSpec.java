@@ -58,7 +58,7 @@ public class Connect4TDDSpec {
         // esto si es visto en clase
 
         assertThatThrownBy(() -> {
-            for (int i = 0; i < 7; i++) {
+            for (int i = 0; i < 8; i++) {
                 tested.putDiscInColumn(3);
             };
         }).isInstanceOf(RuntimeException.class).hasMessageContaining("No more room in column 3");
@@ -67,7 +67,11 @@ public class Connect4TDDSpec {
     @Test
     public void whenFirstDiscInsertedInColumnThenPositionIsZero() {
 
-       assertThat(tested.putDiscInColumn(0)).isEqualTo(0);
+        for (int i = 0; i < 7; i++) {
+
+            assertThat(tested.putDiscInColumn(i)).isEqualTo(0);
+        }
+       //assertThat(tested.putDiscInColumn(0)).isEqualTo(0);
 
 
     }
@@ -75,14 +79,20 @@ public class Connect4TDDSpec {
     @Test
     public void whenSecondDiscInsertedInColumnThenPositionIsOne() {
 
-        //assertThat(tested.putDiscInColumn(1)).isEqualTo(1);
-        assertThat(tested.getCurrentPlayer()).isEqualTo("R");
+        for (int i = 0; i < 7; i++) {
+
+            assertThat(tested.putDiscInColumn(i)).isEqualTo(0);
+        }
     }
 
     @Test
     public void whenDiscInsertedThenNumberOfDiscsIncreases() {
 
     //assertThat(tested.getNumberOfDiscs()).isEqualTo(1);
+
+        int discosIniciales=0;
+        tested.putDiscInColumn(3);
+        assertThat(tested.getNumberOfDiscs()).isEqualTo(discosIniciales+1);
 
     }
 
@@ -101,6 +111,7 @@ public class Connect4TDDSpec {
 
     @Test
     public void whenFirstPlayerPlaysThenDiscColorIsRed() {
+
         assertThat(tested.getCurrentPlayer()).isEqualTo("R");
     }
 

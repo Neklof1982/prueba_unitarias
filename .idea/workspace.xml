@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="561063a2-7378-4c9d-bb45-d310103a949e" name="Changes" comment="COMMIT INICIAL - gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/connect4/Connect4TDDSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/connect4/Connect4TDDSpec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/connect4/Connect4TDDSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/connect4/Connect4TDDSpec.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +59,7 @@
     "Application.Connect4.executor": "Debug",
     "JUnit.AssertTest.shouldReferToSameObject.executor": "Run",
     "JUnit.AssertTest.whenBooleanIsTrue.executor": "Run",
+    "JUnit.Connect4TDDSpec.executor": "Run",
     "JUnit.Connect4TDDSpec.whenDiscInsertedThenNumberOfDiscsIncreases.executor": "Run",
     "JUnit.Connect4TDDSpec.whenDiscOutsideBoardThenRuntimeException.executor": "Run",
     "JUnit.Connect4TDDSpec.whenFirstDiscInsertedInColumnThenPositionIsZero.executor": "Run",
@@ -98,7 +97,7 @@
       <recent name="C:\Users\usuario\IdeaProjects\bucles\bd_persons\test_person" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Connect4TDDSpec">
+  <component name="RunManager" selected="JUnit.Connect4TDDSpec.whenDiscInsertedThenNumberOfDiscsIncreases">
     <configuration name="Connect4TDDSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
@@ -114,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Connect4TDDSpec.whenADiscIsIntroducedTheBoardIsPrinted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Connect4TDDSpec.whenDiscInsertedThenNumberOfDiscsIncreases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -124,23 +123,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="whenADiscIsIntroducedTheBoardIsPrinted" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Connect4TDDSpec.whenAskedForCurrentPlayerTheOutputNotice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test_person" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.connect4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="whenAskedForCurrentPlayerTheOutputNotice" />
+      <option name="METHOD_NAME" value="whenDiscInsertedThenNumberOfDiscsIncreases" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,7 +145,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Connect4TDDSpec.whenNoDiscCanBeIntroducedTheGamesIsFinished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Connect4TDDSpec.whenFirstDiscInsertedInColumnThenPositionIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -172,7 +155,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
-      <option name="METHOD_NAME" value="whenNoDiscCanBeIntroducedTheGamesIsFinished" />
+      <option name="METHOD_NAME" value="whenFirstDiscInsertedInColumnThenPositionIsZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Connect4TDDSpec.whenSecondDiscInsertedInColumnThenPositionIsOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test_person" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.tddjava.connect4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.connect4" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.connect4.Connect4TDDSpec" />
+      <option name="METHOD_NAME" value="whenSecondDiscInsertedInColumnThenPositionIsOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,18 +179,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Connect4TDDSpec" />
-      <item itemvalue="JUnit.Connect4TDDSpec.whenNoDiscCanBeIntroducedTheGamesIsFinished" />
-      <item itemvalue="JUnit.Connect4TDDSpec.whenADiscIsIntroducedTheBoardIsPrinted" />
-      <item itemvalue="JUnit.Connect4TDDSpec.whenAskedForCurrentPlayerTheOutputNotice" />
+      <item itemvalue="JUnit.Connect4TDDSpec.whenFirstDiscInsertedInColumnThenPositionIsZero" />
+      <item itemvalue="JUnit.Connect4TDDSpec.whenSecondDiscInsertedInColumnThenPositionIsOne" />
+      <item itemvalue="JUnit.Connect4TDDSpec.whenDiscInsertedThenNumberOfDiscsIncreases" />
       <item itemvalue="JUnit.Connect4TDDSpec.whenDiscOutsideBoardThenRuntimeException" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Connect4TDDSpec.whenDiscInsertedThenNumberOfDiscsIncreases" />
+        <item itemvalue="JUnit.Connect4TDDSpec.whenSecondDiscInsertedInColumnThenPositionIsOne" />
+        <item itemvalue="JUnit.Connect4TDDSpec.whenFirstDiscInsertedInColumnThenPositionIsZero" />
         <item itemvalue="JUnit.Connect4TDDSpec" />
         <item itemvalue="JUnit.Connect4TDDSpec.whenDiscOutsideBoardThenRuntimeException" />
-        <item itemvalue="JUnit.Connect4TDDSpec.whenNoDiscCanBeIntroducedTheGamesIsFinished" />
-        <item itemvalue="JUnit.Connect4TDDSpec.whenADiscIsIntroducedTheBoardIsPrinted" />
-        <item itemvalue="JUnit.Connect4TDDSpec.whenAskedForCurrentPlayerTheOutputNotice" />
       </list>
     </recent_temporary>
   </component>
@@ -305,7 +304,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712740164794</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="COMMIT INICIAL - gitignore">
+      <option name="closed" value="true" />
+      <created>1712744452979</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712744452979</updated>
+    </task>
+    <task id="LOCAL-00011" summary="COMMIT INICIAL - gitignore">
+      <option name="closed" value="true" />
+      <created>1712744473516</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712744473516</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
