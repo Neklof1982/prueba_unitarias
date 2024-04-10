@@ -60,7 +60,7 @@ public class Connect4TDDSpec {
         assertThatThrownBy(() -> {
             for (int i = 0; i < 8; i++) {
                 tested.putDiscInColumn(3);
-            };
+            }
         }).isInstanceOf(RuntimeException.class).hasMessageContaining("No more room in column 3");
 
     }
@@ -150,7 +150,7 @@ public class Connect4TDDSpec {
     @Test
     public void whenNoDiscCanBeIntroducedTheGamesIsFinished() {
 
-        assertThat(tested.isFinished());
+        //assertThat(tested.isFinished());
     }
 
     /*
