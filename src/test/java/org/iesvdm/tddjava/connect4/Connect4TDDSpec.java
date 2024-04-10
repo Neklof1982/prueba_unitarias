@@ -118,7 +118,7 @@ public class Connect4TDDSpec {
 
     @Test
     public void whenTheGameStartsItIsNotFinished() {
-
+        assertThat(tested.getWinner()).doesNotContain("Win");
     }
 
     @Test
