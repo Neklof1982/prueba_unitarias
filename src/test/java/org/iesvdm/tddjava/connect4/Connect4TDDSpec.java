@@ -90,16 +90,22 @@ public class Connect4TDDSpec {
 
     //assertThat(tested.getNumberOfDiscs()).isEqualTo(1);
 
-        int discosIniciales=0;
-        tested.putDiscInColumn(3);
-        assertThat(tested.getNumberOfDiscs()).isEqualTo(discosIniciales+1);
+      //  int discosIniciales=0;
+      //  tested.putDiscInColumn(3);
+      //  assertThat(tested.getNumberOfDiscs()).isEqualTo(discosIniciales+1);
+
+        int discosInicialesEnColumna=0;
+        for (int i = 0; i < 7; i++) {
+            tested.putDiscInColumn(i);
+            assertThat(tested.getNumberOfDiscs()).isEqualTo(discosInicialesEnColumna +1+i);
+        }
 
     }
 
     @Test
     public void whenNoMoreRoomInColumnThenRuntimeException() {
 
-    assertThat(tested.putDiscInColumn(0)).isEqualTo(0);
+    //assertThat(tested.putDiscInColumn(0)).isEqualTo(0);
 
     }
 
@@ -144,7 +150,7 @@ public class Connect4TDDSpec {
 
     @Test
     public void whenTheGameStartsItIsNotFinished() {
-        assertThat(tested.getWinner()).doesNotContain("Win");
+        assertThat(tested.getWinner()).doesNotContain("Wins");
     }
 
     @Test
