@@ -88,7 +88,6 @@ public class Connect4TDDSpec {
     @Test
     public void whenDiscInsertedThenNumberOfDiscsIncreases() {
 
-    //assertThat(tested.getNumberOfDiscs()).isEqualTo(1);
 
       //  int discosIniciales=0;
       //  tested.putDiscInColumn(3);
