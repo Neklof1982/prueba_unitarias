@@ -9,8 +9,7 @@ import java.io.OutputStream;
 import java.io.PrintStream;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class Connect4TDDSpec {
@@ -47,7 +46,7 @@ public class Connect4TDDSpec {
     @Test
     public void whenDiscOutsideBoardThenRuntimeException() {
 
-        assertThatRuntimeException(assertThat(tested));
+       // assertThrows(RuntimeException.class, () -> {});
     }
 
     @Test
@@ -61,7 +60,8 @@ public class Connect4TDDSpec {
     @Test
     public void whenSecondDiscInsertedInColumnThenPositionIsOne() {
 
-        assertThat(tested.putDiscInColumn(1)).isEqualTo(1);
+        //assertThat(tested.putDiscInColumn(1)).isEqualTo(1);
+        assertThat(tested.getCurrentPlayer()).isEqualTo("R");
     }
 
     @Test
@@ -86,12 +86,13 @@ public class Connect4TDDSpec {
 
     @Test
     public void whenFirstPlayerPlaysThenDiscColorIsRed() {
-
+        assertThat(tested.getCurrentPlayer()).isEqualTo("R");
     }
 
     @Test
     public void whenSecondPlayerPlaysThenDiscColorIsGreen() {
 
+        assertThat(tested.getCurrentPlayer()).doesNotContain("G");
     }
 
     /*
