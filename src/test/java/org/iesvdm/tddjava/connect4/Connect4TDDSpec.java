@@ -67,14 +67,14 @@ public class Connect4TDDSpec {
     @Test
     public void whenDiscInsertedThenNumberOfDiscsIncreases() {
 
-
+    //assertThat(tested.getNumberOfDiscs()).isEqualTo(1);
 
     }
 
     @Test
     public void whenNoMoreRoomInColumnThenRuntimeException() {
 
-
+    assertThat(tested.putDiscInColumn(0)).isEqualTo(0);
 
     }
 
@@ -103,15 +103,15 @@ public class Connect4TDDSpec {
     @Test
     public void whenAskedForCurrentPlayerTheOutputNotice() {
 
-
+    assertThat(tested.getCurrentPlayer()).isEqualTo("R");
 
     }
 
     @Test
     public void whenADiscIsIntroducedTheBoardIsPrinted() {
 
+        assertThat(tested.putDiscInColumn(0)).isEqualTo(0);
     }
-
     /*
      * When no more discs can be inserted, the game finishes and it is considered a draw
      */
