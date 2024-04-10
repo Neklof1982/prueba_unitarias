@@ -1,6 +1,7 @@
 package org.iesvdm.tddjava.connect4;
 
 
+import org.assertj.core.api.ThrowableAssert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -46,9 +47,23 @@ public class Connect4TDDSpec {
     @Test
     public void whenDiscOutsideBoardThenRuntimeException() {
 
-       // assertThrows(RuntimeException.class, () -> {});
-    }
+        assertThrows(RuntimeException.class, () -> {
+            throw new RuntimeException("Invalid column");
+        });
+        // esto no es lo correcto, comentado en clase
 
+        assertThatThrownBy(() -> tested.putDiscInColumn(8))
+                .isInstanceOf(RuntimeException.class).hasMessageContaining("Invalid column 8");
+
+        // esto si es visto en clase
+
+        assertThatThrownBy(() -> {
+            for (int i = 0; i < 7; i++) {
+                tested.putDiscInColumn(3);
+            };
+        }).isInstanceOf(RuntimeException.class).hasMessageContaining("No more room in column 3");
+
+    }
     @Test
     public void whenFirstDiscInsertedInColumnThenPositionIsZero() {
 
@@ -124,6 +139,7 @@ public class Connect4TDDSpec {
     @Test
     public void whenNoDiscCanBeIntroducedTheGamesIsFinished() {
 
+        assertThat(tested.isFinished());
     }
 
     /*
