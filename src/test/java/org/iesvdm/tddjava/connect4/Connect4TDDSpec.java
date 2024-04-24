@@ -415,7 +415,118 @@ public class Connect4TDDSpec {
     @Test
     public void when4Diagonal2DiscsAreConnectedThenThatPlayerWins() {
 
+        tested.putDiscInColumn(0);
+        tested.putDiscInColumn(1);
+        tested.putDiscInColumn(2);
+        tested.putDiscInColumn(3);
+        tested.putDiscInColumn(3);
+        tested.putDiscInColumn(4);
+        tested.putDiscInColumn(5);
+        tested.putDiscInColumn(6);
+        tested.putDiscInColumn(4);
+        tested.putDiscInColumn(5);
+        tested.putDiscInColumn(6);
+        tested.putDiscInColumn(5);
+        tested.putDiscInColumn(4);
+        tested.putDiscInColumn(0);
+        tested.putDiscInColumn(5);
 
+        System.out.println(output.toString());
+
+        String expected = """
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  |R| | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  |R|G| | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  |R|G|R| | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  |R|G|R|G| | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | |R| | | |
+  |R|G|R|G| | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | |R| | | |
+  |R|G|R|G|G| | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | |R| | | |
+  |R|G|R|G|G|R| |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | |R| | | |
+  |R|G|R|G|G|R|G|
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | |R|R| | |
+  |R|G|R|G|G|R|G|
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | |R|R|G| |
+  |R|G|R|G|G|R|G|
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | |R|R|G|R|
+  |R|G|R|G|G|R|G|
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | |G| |
+  | | | |R|R|G|R|
+  |R|G|R|G|G|R|G|
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | |R|G| |
+  | | | |R|R|G|R|
+  |R|G|R|G|G|R|G|
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | |R|G| |
+  |G| | |R|R|G|R|
+  |R|G|R|G|G|R|G|
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | |R| |
+  | | | | |R|G| |
+  |G| | |R|R|G|R|
+  |R|G|R|G|G|R|G|                
+                """;
+        assertThat(output.toString()).isEqualTo(expected);
+        assertThat(tested.getWinner()).isEqualTo("R");
 
     }
 }
