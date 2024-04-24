@@ -136,12 +136,28 @@ public class Connect4TDDSpec {
 
     assertThat(tested.getCurrentPlayer()).isEqualTo("R");
 
+
     }
 
     @Test
     public void whenADiscIsIntroducedTheBoardIsPrinted() {
 
-        assertThat(tested.putDiscInColumn(0)).isEqualTo(0);
+        tested.putDiscInColumn(0);
+
+        System.out.println(output.toString());
+
+        String expected = """
+               | | | | | | | |
+               | | | | | | | |
+               | | | | | | | |
+               | | | | | | | |
+               | | | | | | | |
+               |R| | | | | | |
+                """;
+
+        assertThat(output.toString()).isEqualTo(expected);
+
+
     }
     /*
      * When no more discs can be inserted, the game finishes and it is considered a draw
@@ -155,7 +171,7 @@ public class Connect4TDDSpec {
     @Test
     public void whenNoDiscCanBeIntroducedTheGamesIsFinished() {
 
-        //assertThat(tested.isFinished());
+        assertThat(tested.getWinner()).isEqualTo("It's a draw");
     }
 
     /*
@@ -165,6 +181,67 @@ public class Connect4TDDSpec {
 
     @Test
     public void when4VerticalDiscsAreConnectedThenThatPlayerWins() {
+
+
+        tested.putDiscInColumn(0);
+        tested.putDiscInColumn(1);
+        tested.putDiscInColumn(0);
+        tested.putDiscInColumn(2);
+        tested.putDiscInColumn(0);
+        tested.putDiscInColumn(3);
+        tested.putDiscInColumn(0);
+
+
+        System.out.println(output.toString());
+
+        String expected = """
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |R| | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |R|G| | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |R| | | | | | |
+                |R|G| | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |R| | | | | | |
+                |R|G|G| | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |R| | | | | | |
+                |R| | | | | | |
+                |R|G|G| | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |R| | | | | | |
+                |R| | | | | | |
+                |R|G|G|G| | | |
+                | | | | | | | |
+                | | | | | | | |
+                |R| | | | | | |
+                |R| | | | | | |
+                |R| | | | | | |
+                |R|G|G|G| | | |
+                """;
+
+        assertThat(output.toString()).isEqualTo(expected);
+        assertThat(tested.getWinner()).isEqualTo("R");
+
 
     }
 
@@ -176,6 +253,66 @@ public class Connect4TDDSpec {
     @Test
     public void when4HorizontalDiscsAreConnectedThenThatPlayerWins() {
 
+
+        tested.putDiscInColumn(0);
+        tested.putDiscInColumn(0);
+        tested.putDiscInColumn(1);
+        tested.putDiscInColumn(0);
+        tested.putDiscInColumn(2);
+        tested.putDiscInColumn(0);
+        tested.putDiscInColumn(3);
+
+
+        System.out.println(output.toString());
+
+        String expected = """
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |R| | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |G| | | | | | |
+                |R| | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |G| | | | | | |
+                |R|R| | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |G| | | | | | |
+                |G| | | | | | |
+                |R|R| | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |G| | | | | | |
+                |G| | | | | | |
+                |R|R|R| | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |G| | | | | | |
+                |G| | | | | | |
+                |G| | | | | | |
+                |R|R|R| | | | |
+                | | | | | | | |
+                | | | | | | | |
+                |G| | | | | | |
+                |G| | | | | | |
+                |G| | | | | | |
+                |R|R|R|R| | | |
+                """;
+
+        assertThat(output.toString()).isEqualTo(expected);
+        assertThat(tested.getWinner()).isEqualTo("R");
+
     }
 
     /*
@@ -186,10 +323,99 @@ public class Connect4TDDSpec {
     @Test
     public void when4Diagonal1DiscsAreConnectedThenThatPlayerWins() {
 
+        tested.putDiscInColumn(0);
+        tested.putDiscInColumn(1);
+        tested.putDiscInColumn(1);
+        tested.putDiscInColumn(2);
+        tested.putDiscInColumn(2);
+        tested.putDiscInColumn(3);
+        tested.putDiscInColumn(2);
+        tested.putDiscInColumn(3);
+        tested.putDiscInColumn(3);
+        tested.putDiscInColumn(1);
+        tested.putDiscInColumn(3);
+
+
+        System.out.println(output.toString());
+
+        String expected = """
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  |R| | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  |R|G| | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | |R| | | | | |
+  |R|G| | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | |R| | | | | |
+  |R|G|G| | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | |R|R| | | | |
+  |R|G|G| | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | |R|R| | | | |
+  |R|G|G|G| | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | |R| | | | |
+  | |R|R| | | | |
+  |R|G|G|G| | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | |R| | | | |
+  | |R|R|G| | | |
+  |R|G|G|G| | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | |R|R| | | |
+  | |R|R|G| | | |
+  |R|G|G|G| | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | | | | | |
+  | |G|R|R| | | |
+  | |R|R|G| | | |
+  |R|G|G|G| | | |
+  | | | | | | | |
+  | | | | | | | |
+  | | | |R| | | |
+  | |G|R|R| | | |
+  | |R|R|G| | | |
+  |R|G|G|G| | | |
+                """;
+
+        assertThat(output.toString()).isEqualTo(expected);
+        assertThat(tested.getWinner()).isEqualTo("R");
+
     }
 
     @Test
     public void when4Diagonal2DiscsAreConnectedThenThatPlayerWins() {
+
+
 
     }
 }
