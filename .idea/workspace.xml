@@ -121,7 +121,7 @@
       <recent name="C:\Users\usuario\IdeaProjects\bucles\bd_persons\test_person" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LocationSpec.givenDirectionNWhenBackwardThenYIncreases">
+  <component name="RunManager" selected="TestNG.LocationSpec.givenDirectionSWhenBackwardThenYDecreases">
     <configuration name="LocationSpec.givenDirectionEWhenForwardThenXIncreases" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
@@ -158,7 +158,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocationSpec.givenDirectionNWhenForwardThenYDecreases" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationSpec.givenDirectionSWhenBackwardThenYDecreases" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -168,7 +168,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDirectionNWhenForwardThenYDecreases" />
+      <option name="METHOD_NAME" value="givenDirectionSWhenBackwardThenYDecreases" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -215,17 +215,17 @@
     <list>
       <item itemvalue="TestNG.LocationSpec.givenDirectionEWhenForwardThenXIncreases" />
       <item itemvalue="TestNG.LocationSpec.givenDirectionNWhenBackwardThenYIncreases" />
-      <item itemvalue="TestNG.LocationSpec.givenDirectionNWhenForwardThenYDecreases" />
+      <item itemvalue="TestNG.LocationSpec.givenDirectionSWhenBackwardThenYDecreases" />
       <item itemvalue="TestNG.LocationSpec.givenDirectionSWhenForwardThenYIncreases" />
       <item itemvalue="TestNG.LocationSpec.givenDirectionWWhenForwardThenXDecreases" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LocationSpec.givenDirectionSWhenBackwardThenYDecreases" />
         <item itemvalue="TestNG.LocationSpec.givenDirectionNWhenBackwardThenYIncreases" />
         <item itemvalue="TestNG.LocationSpec.givenDirectionWWhenForwardThenXDecreases" />
         <item itemvalue="TestNG.LocationSpec.givenDirectionEWhenForwardThenXIncreases" />
         <item itemvalue="TestNG.LocationSpec.givenDirectionSWhenForwardThenYIncreases" />
-        <item itemvalue="TestNG.LocationSpec.givenDirectionNWhenForwardThenYDecreases" />
       </list>
     </recent_temporary>
   </component>

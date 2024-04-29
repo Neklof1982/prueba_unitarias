@@ -127,7 +127,7 @@ public class LocationSpec {
         //When (cuando)
         // direccion inical
         Direction direction = Direction.WEST;
-        int initialY = location.getY()-1;
+        int initialY = location.getY()+1;
         //Do (Hacer)
         // nueva direccion
         Direction Nuevadirection = Direction.WEST.turnRight();
@@ -136,12 +136,25 @@ public class LocationSpec {
 
         assertEquals(Nuevadirection, Direction.NORTH);
         // verifica que al girar izquiera nueva direccion es Sur
-        assertTrue((location.getY() >initialY));
+        assertTrue((location.getY() < initialY));
         // verifica y  ha cambiado
     }
 
     public void givenDirectionSWhenBackwardThenYDecreases() {
+        //When (cuando)
+        // direccion inical
+        Direction direction = Direction.EAST;
+        int initialY = location.getY()-1;
+        //Do (Hacer)
+        // nueva direccion
+        Direction Nuevadirection = Direction.EAST.turnRight();
 
+        // Then (Entonces)
+
+        assertEquals(Nuevadirection, Direction.SOUTH);
+        // verifica que al girar izquiera nueva direccion es Sur
+        assertTrue((location.getY() > initialY));
+        // verifica y  ha cambiado
     }
 
     public void givenDirectionEWhenBackwardThenXDecreases() {
