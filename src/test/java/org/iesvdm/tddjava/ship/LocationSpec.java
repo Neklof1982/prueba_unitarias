@@ -1,5 +1,7 @@
 package org.iesvdm.tddjava.ship;
 
+import jdk.javadoc.doclet.Taglet;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.util.ArrayList;
@@ -60,7 +62,7 @@ public class LocationSpec {
         //When (cuando)
         // direccion inical
         Direction direction = Direction.WEST;
-        int initialY = location.getY();
+        int initialY = location.getY() -1;
         //Do (Hacer)
         // nueva direccion
         Direction Nuevadirection = Direction.WEST.turnRight();
@@ -69,7 +71,7 @@ public class LocationSpec {
 
         assertEquals(Nuevadirection, Direction.NORTH);
         // verifica que al girar izquiera nueva direcio es este
-        assertTrue(location.getY() < initialY);
+        assertTrue(location.getY()> initialY);
     }
 
     public void givenDirectionSWhenForwardThenYIncreases() {
@@ -152,37 +154,102 @@ public class LocationSpec {
         // Then (Entonces)
 
         assertEquals(Nuevadirection, Direction.SOUTH);
-        // verifica que al girar izquiera nueva direccion es Sur
+        // verifica que al girar izquiera nueva direccion es sur
         assertTrue((location.getY() > initialY));
         // verifica y  ha cambiado
     }
 
     public void givenDirectionEWhenBackwardThenXDecreases() {
+        //When (cuando)
+        // direccion inical
+        Direction direction = Direction.NORTH;
+        int initialX = location.getX() - 1;
+        //Do (Hacer)
+        // nueva direccion
+        Direction Nuevadirection = Direction.NORTH.turnRight();
 
+        // Then (Entonces)
+
+        assertEquals(Nuevadirection, Direction.EAST);
+        // verifica que al girar izquiera nueva direccion es este
+        assertTrue(location.getX() > initialX);
+        // verifica x  ha cambiado
     }
 
     public void givenDirectionWWhenBackwardThenXIncreases() {
+        //When (cuando)
+        // direccion inical
+        Direction direction = Direction.SOUTH;
+        int initialX = location.getX() + 1;
+        //Do (Hacer)
+        // nueva direccion
+        Direction Nuevadirection = Direction.SOUTH.turnRight();
 
+        // Then (Entonces)
+
+        assertEquals(Nuevadirection, Direction.WEST);
+        // verifica que al girar izquiera nueva direccion es oeste
+        assertTrue(location.getX() < initialX);
+        // verifica x  ha cambiado
     }
 
     public void whenTurnLeftThenDirectionIsSet() {
+        //When (cuando)
+        // direccion inical
+        Direction direction =Direction.SOUTH;
 
+        //Do (Hacer)
+        direction = direction.turnLeft();
+
+        // Then (Entonces)
+        assertEquals(direction, Direction.EAST);
+        // verifica que al girar izquiera nueva direccion es este
     }
 
     public void whenTurnRightThenDirectionIsSet() {
+        //When (cuando)
+        // direccion inical
+        Direction direction =Direction.SOUTH;
 
+        //Do (Hacer)
+        direction = direction.turnRight();
+
+        // Then (Entonces)
+        assertEquals(direction, Direction.WEST);
+        // verifica que al girar izquiera nueva direccion es Oeste
     }
 
     public void givenSameObjectsWhenEqualsThenTrue() {
+        //When (cuando)
+        Location location1 = new Location(new Point(10, 20), Direction.NORTH);
+        Location location2 = new Location(new Point(10, 20), Direction.NORTH);
 
+        // Do Then
+
+        assertTrue(location1.equals(location2));
+        // verifica que son dos iguales
     }
 
     public void givenDifferentObjectWhenEqualsThenFalse() {
+      //When (cuando)
+        Location location1 = new Location(new Point(10, 20), Direction.NORTH);
+        Location location2 = new Location(new Point(30, 40), Direction.SOUTH);
 
+        // Do Then
+
+        assertTrue(!location1.equals(location2));
+        // verifica que son dos diferentes
     }
 
     public void givenDifferentXWhenEqualsThenFalse() {
+        //When (cuando)
+        Location location1 = new Location(new Point(10, 20), Direction.NORTH);
+        Location location2 = new Location(new Point(30, 40), Direction.SOUTH);
 
+        // Do Then
+
+        assertTrue(!location1.equals(location2));
+        // verifica que son dos x diferentes
     }
 
     public void givenDifferentYWhenEqualsThenFalse() {

@@ -87,13 +87,21 @@
     "TestNG.DirectionSpec.whenGetFromShortNameNThenReturnDirectionN.executor": "Run",
     "TestNG.DirectionSpec.whenGetFromShortNameWThenReturnDirectionW.executor": "Run",
     "TestNG.LocationSpec.executor": "Run",
+    "TestNG.LocationSpec.givenDifferentObjectWhenEqualsThenFalse.executor": "Run",
+    "TestNG.LocationSpec.givenDifferentXWhenEqualsThenFalse.executor": "Run",
+    "TestNG.LocationSpec.givenDirectionEWhenBackwardThenXDecreases.executor": "Run",
     "TestNG.LocationSpec.givenDirectionEWhenForwardThenXIncreases.executor": "Run",
+    "TestNG.LocationSpec.givenDirectionNWhenBackwardThenYIncreases.executor": "Run",
     "TestNG.LocationSpec.givenDirectionNWhenForwardThenYDecreases.executor": "Run",
+    "TestNG.LocationSpec.givenDirectionSWhenBackwardThenYDecreases.executor": "Run",
     "TestNG.LocationSpec.givenDirectionSWhenForwardThenYIncreases.executor": "Run",
+    "TestNG.LocationSpec.givenDirectionWWhenBackwardThenXIncreases.executor": "Run",
     "TestNG.LocationSpec.givenDirectionWWhenForwardThenXDecreases.executor": "Run",
     "TestNG.LocationSpec.whenInstantiatedThenDirectionIsStored.executor": "Run",
     "TestNG.LocationSpec.whenInstantiatedThenXIsStored.executor": "Run",
     "TestNG.LocationSpec.whenInstantiatedThenYIsStored.executor": "Run",
+    "TestNG.LocationSpec.whenTurnLeftThenDirectionIsSet.executor": "Run",
+    "TestNG.LocationSpec.whenTurnRightThenDirectionIsSet.executor": "Run",
     "TestNG.directionSpec.executor": "Run",
     "TestNG.directionSpec.givenWWhenRightThenN.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
@@ -121,8 +129,8 @@
       <recent name="C:\Users\usuario\IdeaProjects\bucles\bd_persons\test_person" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LocationSpec.givenDirectionSWhenBackwardThenYDecreases">
-    <configuration name="LocationSpec.givenDirectionEWhenForwardThenXIncreases" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LocationSpec.givenSameObjectsWhenEqualsThenTrue">
+    <configuration name="LocationSpec" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -132,7 +140,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDirectionEWhenForwardThenXIncreases" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocationSpec.givenDifferentObjectWhenEqualsThenFalse" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_person" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
+      <option name="METHOD_NAME" value="givenDifferentObjectWhenEqualsThenFalse" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -140,7 +165,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocationSpec.givenDirectionNWhenBackwardThenYIncreases" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationSpec.givenDifferentXWhenEqualsThenFalse" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -150,7 +175,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDirectionNWhenBackwardThenYIncreases" />
+      <option name="METHOD_NAME" value="givenDifferentXWhenEqualsThenFalse" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -158,7 +183,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocationSpec.givenDirectionSWhenBackwardThenYDecreases" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationSpec.givenDirectionNWhenForwardThenYDecreases" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -168,7 +193,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDirectionSWhenBackwardThenYDecreases" />
+      <option name="METHOD_NAME" value="givenDirectionNWhenForwardThenYDecreases" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -176,7 +201,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocationSpec.givenDirectionSWhenForwardThenYIncreases" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationSpec.givenSameObjectsWhenEqualsThenTrue" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -186,25 +211,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDirectionSWhenForwardThenYIncreases" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocationSpec.givenDirectionWWhenForwardThenXDecreases" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_person" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDirectionWWhenForwardThenXDecreases" />
+      <option name="METHOD_NAME" value="givenSameObjectsWhenEqualsThenTrue" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -213,19 +220,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.LocationSpec.givenDirectionEWhenForwardThenXIncreases" />
-      <item itemvalue="TestNG.LocationSpec.givenDirectionNWhenBackwardThenYIncreases" />
-      <item itemvalue="TestNG.LocationSpec.givenDirectionSWhenBackwardThenYDecreases" />
-      <item itemvalue="TestNG.LocationSpec.givenDirectionSWhenForwardThenYIncreases" />
-      <item itemvalue="TestNG.LocationSpec.givenDirectionWWhenForwardThenXDecreases" />
+      <item itemvalue="TestNG.LocationSpec" />
+      <item itemvalue="TestNG.LocationSpec.givenDifferentObjectWhenEqualsThenFalse" />
+      <item itemvalue="TestNG.LocationSpec.givenDifferentXWhenEqualsThenFalse" />
+      <item itemvalue="TestNG.LocationSpec.givenDirectionNWhenForwardThenYDecreases" />
+      <item itemvalue="TestNG.LocationSpec.givenSameObjectsWhenEqualsThenTrue" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LocationSpec.givenDirectionSWhenBackwardThenYDecreases" />
-        <item itemvalue="TestNG.LocationSpec.givenDirectionNWhenBackwardThenYIncreases" />
-        <item itemvalue="TestNG.LocationSpec.givenDirectionWWhenForwardThenXDecreases" />
-        <item itemvalue="TestNG.LocationSpec.givenDirectionEWhenForwardThenXIncreases" />
-        <item itemvalue="TestNG.LocationSpec.givenDirectionSWhenForwardThenYIncreases" />
+        <item itemvalue="TestNG.LocationSpec.givenSameObjectsWhenEqualsThenTrue" />
+        <item itemvalue="TestNG.LocationSpec" />
+        <item itemvalue="TestNG.LocationSpec.givenDirectionNWhenForwardThenYDecreases" />
+        <item itemvalue="TestNG.LocationSpec.givenDifferentXWhenEqualsThenFalse" />
+        <item itemvalue="TestNG.LocationSpec.givenDifferentObjectWhenEqualsThenFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +276,7 @@
       <workItem from="1712737843252" duration="1084000" />
       <workItem from="1713343444968" duration="2839000" />
       <workItem from="1713946714616" duration="6875000" />
-      <workItem from="1714407156959" duration="8973000" />
+      <workItem from="1714407156959" duration="12146000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT INICIAL">
       <created>1680163647182</created>
@@ -437,7 +444,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714412301031</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="COMMIT Ship-Direction - gitignore">
+      <option name="closed" value="true" />
+      <created>1714416357731</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1714416357731</updated>
+    </task>
+    <task id="LOCAL-00023" summary="COMMIT Ship-Direction - gitignore">
+      <option name="closed" value="true" />
+      <created>1714416524070</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1714416524070</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
