@@ -26,34 +26,118 @@ public class LocationSpec {
 
     public void whenInstantiatedThenXIsStored() {
 
+        assertEquals(x, location.getX());
+        assertTrue(obstacles.isEmpty());
+        assertTrue(location.getDirection().describeConstable().isPresent());
+
     }
 
     public void whenInstantiatedThenYIsStored() {
+        assertEquals(y, location.getY());
+        assertTrue(obstacles.isEmpty());
+        assertTrue(location.getDirection().describeConstable().isPresent());
 
     }
 
     public void whenInstantiatedThenDirectionIsStored() {
 
+        //When (cuando)
+        // direccion inical
+        Direction direction = Direction.NORTH;
+
+        //Do (Hacer)
+        // nueva direccion
+        Direction Nuevadirection = Direction.NORTH.turnRight();
+
+        // Then (Entonces)
+
+        assertEquals(Nuevadirection, Direction.EAST);
+        // verifica que al girar izquiera nueva direcioń es este
+
     }
 
     public void givenDirectionNWhenForwardThenYDecreases() {
+        //When (cuando)
+        // direccion inical
+        Direction direction = Direction.WEST;
+        int initialY = location.getY();
+        //Do (Hacer)
+        // nueva direccion
+        Direction Nuevadirection = Direction.WEST.turnRight();
 
+        // Then (Entonces)
+
+        assertEquals(Nuevadirection, Direction.NORTH);
+        // verifica que al girar izquiera nueva direcio es este
+        assertTrue(location.getY() < initialY);
     }
 
     public void givenDirectionSWhenForwardThenYIncreases() {
+        //When (cuando)
+        // direccion inical
+        Direction direction = Direction.EAST;
+        int initialY = location.getY()+1;
+        //Do (Hacer)
+        // nueva direccion
+        Direction Nuevadirection = Direction.EAST.turnRight();
 
+        // Then (Entonces)
+
+        assertEquals(Nuevadirection, Direction.SOUTH);
+        // verifica que al girar izquiera nueva direccion es Sur
+        assertTrue((location.getY() < initialY));
+        // verifica y  ha cambiado
     }
 
     public void givenDirectionEWhenForwardThenXIncreases() {
+        //When (cuando)
+        // direccion inical
+        Direction direction = Direction.WEST;
+        int initialX = location.getX() + 1;
+        //Do (Hacer)
+        // nueva direccion
+        Direction Nuevadirection = Direction.WEST.turnRight();
 
+        // Then (Entonces)
+
+        assertEquals(Nuevadirection, Direction.NORTH);
+        // verifica que al girar izquiera nueva direccion es norte
+        assertTrue(location.getX() < initialX);
+        // verifica x  ha cambiado
     }
 
     public void givenDirectionWWhenForwardThenXDecreases() {
+        //When (cuando)
+        // direccion inical
+        Direction direction = Direction.NORTH;
+        int initialX = location.getX() - 1;
+        //Do (Hacer)
+        // nueva direccion
+        Direction Nuevadirection = Direction.NORTH.turnLeft();
 
+        // Then (Entonces)
+
+        assertEquals(Nuevadirection, Direction.WEST);
+        // verifica que al girar izquiera nueva direccion es oeste
+        assertTrue(location.getX() > initialX);
+        // verifica x  ha cambiado
     }
 
     public void givenDirectionNWhenBackwardThenYIncreases() {
+        //When (cuando)
+        // direccion inical
+        Direction direction = Direction.WEST;
+        int initialY = location.getY()-1;
+        //Do (Hacer)
+        // nueva direccion
+        Direction Nuevadirection = Direction.WEST.turnRight();
 
+        // Then (Entonces)
+
+        assertEquals(Nuevadirection, Direction.NORTH);
+        // verifica que al girar izquiera nueva direccion es Sur
+        assertTrue((location.getY() >initialY));
+        // verifica y  ha cambiado
     }
 
     public void givenDirectionSWhenBackwardThenYDecreases() {
