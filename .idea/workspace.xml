@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="561063a2-7378-4c9d-bb45-d310103a949e" name="Changes" comment="COMMIT INICIAL - gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/LocationSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/LocationSpec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/connect4/Connect4TDDSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/connect4/Connect4TDDSpec.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/ship/LocationSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/ship/LocationSpec.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +84,7 @@
     "TestNG.LocationSpec.givenDirectionEAndXEqualsMaxXWhenForwardThen1.executor": "Run",
     "TestNG.LocationSpec.givenDirectionNAndYEquals1WhenForwardThenMaxY.executor": "Run",
     "TestNG.LocationSpec.givenDirectionWAndXEquals1WhenForwardThenMaxX.executor": "Run",
+    "TestNG.LocationSpec.givenObstacleWhenForwardThenReturnFalse.executor": "Run",
     "TestNG.LocationSpec.givenSameXYDirectionWhenEqualsThenTrue.executor": "Run",
     "TestNG.LocationSpec.whenCopyThenDifferentObject.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
@@ -114,8 +112,8 @@
       <recent name="C:\Users\usuario\IdeaProjects\bucles\bd_persons\test_person" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LocationSpec.givenDirectionNAndYEquals1WhenForwardThenMaxY">
-    <configuration name="LocationSpec.givenDifferentDirectionWhenEqualsThenFalse" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LocationSpec">
+    <configuration name="LocationSpec" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -125,26 +123,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDifferentDirectionWhenEqualsThenFalse" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocationSpec.givenDirectionEAndXEqualsMaxXWhenForwardThen1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_person" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDirectionEAndXEqualsMaxXWhenForwardThen1" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -187,7 +166,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocationSpec.whenCopyThenDifferentObject" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationSpec.givenObstacleWhenBackwardThenReturnFalse" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -197,7 +176,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="whenCopyThenDifferentObject" />
+      <option name="METHOD_NAME" value="givenObstacleWhenBackwardThenReturnFalse" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocationSpec.givenObstacleWhenForwardThenReturnFalse" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_person" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
+      <option name="METHOD_NAME" value="givenObstacleWhenForwardThenReturnFalse" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -206,19 +203,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.LocationSpec.givenDifferentDirectionWhenEqualsThenFalse" />
-      <item itemvalue="TestNG.LocationSpec.givenDirectionEAndXEqualsMaxXWhenForwardThen1" />
+      <item itemvalue="TestNG.LocationSpec" />
       <item itemvalue="TestNG.LocationSpec.givenDirectionNAndYEquals1WhenForwardThenMaxY" />
       <item itemvalue="TestNG.LocationSpec.givenDirectionWAndXEquals1WhenForwardThenMaxX" />
-      <item itemvalue="TestNG.LocationSpec.whenCopyThenDifferentObject" />
+      <item itemvalue="TestNG.LocationSpec.givenObstacleWhenBackwardThenReturnFalse" />
+      <item itemvalue="TestNG.LocationSpec.givenObstacleWhenForwardThenReturnFalse" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LocationSpec" />
+        <item itemvalue="TestNG.LocationSpec.givenObstacleWhenBackwardThenReturnFalse" />
+        <item itemvalue="TestNG.LocationSpec.givenObstacleWhenForwardThenReturnFalse" />
         <item itemvalue="TestNG.LocationSpec.givenDirectionNAndYEquals1WhenForwardThenMaxY" />
         <item itemvalue="TestNG.LocationSpec.givenDirectionWAndXEquals1WhenForwardThenMaxX" />
-        <item itemvalue="TestNG.LocationSpec.givenDirectionEAndXEqualsMaxXWhenForwardThen1" />
-        <item itemvalue="TestNG.LocationSpec.whenCopyThenDifferentObject" />
-        <item itemvalue="TestNG.LocationSpec.givenDifferentDirectionWhenEqualsThenFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -390,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713953905328</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="COMMIT INICIAL - gitignore">
+      <option name="closed" value="true" />
+      <created>1714466568867</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1714466568867</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

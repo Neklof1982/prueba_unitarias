@@ -349,7 +349,7 @@ public class LocationSpec {
         //Do (Hacer)
         Direction Nuevadirection = Direction.WEST.turnRight();
 
-        //Ten (Entonces)
+        //Then (Entonces)
         assertEquals(Nuevadirection, Direction.NORTH);
         assertTrue(location.getY() < initialY);
 
@@ -357,14 +357,33 @@ public class LocationSpec {
 
     public void givenDirectionSAndYEqualsMaxYWhenForwardThen1() {
 
+        //When (cuando)
+        Direction direction = Direction.SOUTH;
+        int initialY = location.getY() + 1;
+
+        //Do (Hacer)
+        Direction Nuevadirection = Direction.SOUTH.turnLeft();
+
+        //Then (Entonces)
+        assertEquals(Nuevadirection, Direction.EAST);
+        assertTrue(location.getY() < initialY);
+
+
     }
 
     public void givenObstacleWhenForwardThenReturnFalse() {
+
+        Location location1 = new Location(new Point(10, 20), Direction.NORTH);
+        location1.forward();
+        assertFalse(location1.equals(obstacles));
 
     }
 
     public void givenObstacleWhenBackwardThenReturnFalse() {
 
-    }
+        Location location1 = new Location(new Point(10, 20), Direction.NORTH);
+        location1.backward();
+        assertFalse(location1.equals(obstacles));
 
+    }
 }
