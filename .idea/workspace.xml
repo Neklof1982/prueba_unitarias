@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="561063a2-7378-4c9d-bb45-d310103a949e" name="Changes" comment="COMMIT INICIAL - gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/LocationSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/LocationSpec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/PlanetSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/PlanetSpec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/PointSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/PointSpec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/ship/LocationSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/ship/LocationSpec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/ShipSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/ShipSpec.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,8 +92,10 @@
     "TestNG.LocationSpec.givenSameObjectsWhenEqualsThenTrue.executor": "Run",
     "TestNG.LocationSpec.givenSameXYDirectionWhenEqualsThenTrue.executor": "Run",
     "TestNG.LocationSpec.whenCopyThenDifferentObject.executor": "Run",
+    "TestNG.LocationSpec.whenCopyThenEquals.executor": "Run",
     "TestNG.PlanetSpec.whenInstantiatedThenMaxIsSet.executor": "Run",
     "TestNG.PointSpec.executor": "Run",
+    "TestNG.ShipSpec.whenMoveForwardThenForward.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -123,61 +121,7 @@
       <recent name="C:\Users\usuario\IdeaProjects\bucles\bd_persons\test_person" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LocationSpec.whenCopyThenDifferentObject">
-    <configuration name="LocationSpec.givenDifferentDirectionWhenEqualsThenFalse" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_person" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDifferentDirectionWhenEqualsThenFalse" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocationSpec.givenDifferentYWhenEqualsThenFalse" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_person" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDifferentYWhenEqualsThenFalse" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocationSpec.givenSameXYDirectionWhenEqualsThenTrue" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_person" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenSameXYDirectionWhenEqualsThenTrue" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.ShipSpec.whenReceiveCommandsFThenForward">
     <configuration name="LocationSpec.whenCopyThenDifferentObject" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
@@ -214,20 +158,74 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShipSpec.whenMoveBackwardThenBackward" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_person" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.ShipSpec" />
+      <option name="METHOD_NAME" value="whenMoveBackwardThenBackward" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShipSpec.whenMoveForwardThenForward" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_person" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.ShipSpec" />
+      <option name="METHOD_NAME" value="whenMoveForwardThenForward" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShipSpec.whenReceiveCommandsFThenForward" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_person" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.ShipSpec" />
+      <option name="METHOD_NAME" value="whenReceiveCommandsFThenForward" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.LocationSpec.givenDifferentDirectionWhenEqualsThenFalse" />
-      <item itemvalue="TestNG.LocationSpec.givenDifferentYWhenEqualsThenFalse" />
-      <item itemvalue="TestNG.LocationSpec.givenSameXYDirectionWhenEqualsThenTrue" />
       <item itemvalue="TestNG.LocationSpec.whenCopyThenDifferentObject" />
       <item itemvalue="TestNG.LocationSpec.whenCopyThenEquals" />
+      <item itemvalue="TestNG.ShipSpec.whenMoveBackwardThenBackward" />
+      <item itemvalue="TestNG.ShipSpec.whenMoveForwardThenForward" />
+      <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsFThenForward" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ShipSpec.whenReceiveCommandsFThenForward" />
+        <item itemvalue="TestNG.ShipSpec.whenMoveBackwardThenBackward" />
+        <item itemvalue="TestNG.ShipSpec.whenMoveForwardThenForward" />
         <item itemvalue="TestNG.LocationSpec.whenCopyThenDifferentObject" />
         <item itemvalue="TestNG.LocationSpec.whenCopyThenEquals" />
-        <item itemvalue="TestNG.LocationSpec.givenSameXYDirectionWhenEqualsThenTrue" />
-        <item itemvalue="TestNG.LocationSpec.givenDifferentDirectionWhenEqualsThenFalse" />
-        <item itemvalue="TestNG.LocationSpec.givenDifferentYWhenEqualsThenFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -415,7 +413,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714467095809</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="COMMIT INICIAL - gitignore">
+      <option name="closed" value="true" />
+      <created>1714468219953</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714468219953</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
