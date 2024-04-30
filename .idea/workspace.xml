@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="561063a2-7378-4c9d-bb45-d310103a949e" name="Changes" comment="COMMIT Ship-Direction - gitignore">
+    <list default="true" id="561063a2-7378-4c9d-bb45-d310103a949e" name="Changes" comment="COMMIT INICIAL - gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/LocationSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tddjava/ship/LocationSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/connect4/Connect4TDDSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/connect4/Connect4TDDSpec.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/ship/LocationSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/iesvdm/tddjava/ship/LocationSpec.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +62,6 @@
     "Application.Connect4.executor": "Run",
     "JUnit.AssertTest.shouldReferToSameObject.executor": "Run",
     "JUnit.AssertTest.whenBooleanIsTrue.executor": "Run",
-    "JUnit.Connect4TDDSpec (1).executor": "Run",
     "JUnit.Connect4TDDSpec.executor": "Run",
     "JUnit.Connect4TDDSpec.when4Diagonal1DiscsAreConnectedThenThatPlayerWins.executor": "Run",
     "JUnit.Connect4TDDSpec.when4Diagonal2DiscsAreConnectedThenThatPlayerWins.executor": "Run",
@@ -81,29 +81,14 @@
     "JUnit.Connect4TDDSpec.whenTheGameStartsTheBoardIsEmpty.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.DirectionSpec.givenNWhenLeftThenW.executor": "Run",
-    "TestNG.DirectionSpec.givenSWhenLeftThenE.executor": "Run",
-    "TestNG.DirectionSpec.whenGetFromShortNameBThenReturnNone.executor": "Run",
-    "TestNG.DirectionSpec.whenGetFromShortNameNThenReturnDirectionN.executor": "Run",
-    "TestNG.DirectionSpec.whenGetFromShortNameWThenReturnDirectionW.executor": "Run",
-    "TestNG.LocationSpec.executor": "Run",
-    "TestNG.LocationSpec.givenDifferentObjectWhenEqualsThenFalse.executor": "Run",
-    "TestNG.LocationSpec.givenDifferentXWhenEqualsThenFalse.executor": "Run",
-    "TestNG.LocationSpec.givenDirectionEWhenBackwardThenXDecreases.executor": "Run",
-    "TestNG.LocationSpec.givenDirectionEWhenForwardThenXIncreases.executor": "Run",
-    "TestNG.LocationSpec.givenDirectionNWhenBackwardThenYIncreases.executor": "Run",
-    "TestNG.LocationSpec.givenDirectionNWhenForwardThenYDecreases.executor": "Run",
-    "TestNG.LocationSpec.givenDirectionSWhenBackwardThenYDecreases.executor": "Run",
-    "TestNG.LocationSpec.givenDirectionSWhenForwardThenYIncreases.executor": "Run",
-    "TestNG.LocationSpec.givenDirectionWWhenBackwardThenXIncreases.executor": "Run",
-    "TestNG.LocationSpec.givenDirectionWWhenForwardThenXDecreases.executor": "Run",
-    "TestNG.LocationSpec.whenInstantiatedThenDirectionIsStored.executor": "Run",
-    "TestNG.LocationSpec.whenInstantiatedThenXIsStored.executor": "Run",
-    "TestNG.LocationSpec.whenInstantiatedThenYIsStored.executor": "Run",
-    "TestNG.LocationSpec.whenTurnLeftThenDirectionIsSet.executor": "Run",
-    "TestNG.LocationSpec.whenTurnRightThenDirectionIsSet.executor": "Run",
-    "TestNG.directionSpec.executor": "Run",
-    "TestNG.directionSpec.givenWWhenRightThenN.executor": "Run",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.LocationSpec.givenDifferentDirectionWhenEqualsThenFalse.executor": "Run",
+    "TestNG.LocationSpec.givenDifferentYWhenEqualsThenFalse.executor": "Run",
+    "TestNG.LocationSpec.givenDirectionEAndXEqualsMaxXWhenForwardThen1.executor": "Run",
+    "TestNG.LocationSpec.givenDirectionNAndYEquals1WhenForwardThenMaxY.executor": "Run",
+    "TestNG.LocationSpec.givenDirectionWAndXEquals1WhenForwardThenMaxX.executor": "Run",
+    "TestNG.LocationSpec.givenSameXYDirectionWhenEqualsThenTrue.executor": "Run",
+    "TestNG.LocationSpec.whenCopyThenDifferentObject.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -129,8 +114,8 @@
       <recent name="C:\Users\usuario\IdeaProjects\bucles\bd_persons\test_person" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LocationSpec.givenSameObjectsWhenEqualsThenTrue">
-    <configuration name="LocationSpec" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LocationSpec.givenDirectionNAndYEquals1WhenForwardThenMaxY">
+    <configuration name="LocationSpec.givenDifferentDirectionWhenEqualsThenFalse" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -140,24 +125,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocationSpec.givenDifferentObjectWhenEqualsThenFalse" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test_person" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDifferentObjectWhenEqualsThenFalse" />
+      <option name="METHOD_NAME" value="givenDifferentDirectionWhenEqualsThenFalse" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -165,7 +133,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocationSpec.givenDifferentXWhenEqualsThenFalse" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationSpec.givenDirectionEAndXEqualsMaxXWhenForwardThen1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -175,7 +143,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDifferentXWhenEqualsThenFalse" />
+      <option name="METHOD_NAME" value="givenDirectionEAndXEqualsMaxXWhenForwardThen1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -183,7 +151,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocationSpec.givenDirectionNWhenForwardThenYDecreases" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationSpec.givenDirectionNAndYEquals1WhenForwardThenMaxY" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -193,7 +161,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenDirectionNWhenForwardThenYDecreases" />
+      <option name="METHOD_NAME" value="givenDirectionNAndYEquals1WhenForwardThenMaxY" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -201,7 +169,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocationSpec.givenSameObjectsWhenEqualsThenTrue" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationSpec.givenDirectionWAndXEquals1WhenForwardThenMaxX" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test_person" />
       <extension name="coverage">
         <pattern>
@@ -211,7 +179,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
-      <option name="METHOD_NAME" value="givenSameObjectsWhenEqualsThenTrue" />
+      <option name="METHOD_NAME" value="givenDirectionWAndXEquals1WhenForwardThenMaxX" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocationSpec.whenCopyThenDifferentObject" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test_person" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.tddjava.ship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.tddjava.ship" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tddjava.ship.LocationSpec" />
+      <option name="METHOD_NAME" value="whenCopyThenDifferentObject" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -220,26 +206,27 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.LocationSpec" />
-      <item itemvalue="TestNG.LocationSpec.givenDifferentObjectWhenEqualsThenFalse" />
-      <item itemvalue="TestNG.LocationSpec.givenDifferentXWhenEqualsThenFalse" />
-      <item itemvalue="TestNG.LocationSpec.givenDirectionNWhenForwardThenYDecreases" />
-      <item itemvalue="TestNG.LocationSpec.givenSameObjectsWhenEqualsThenTrue" />
+      <item itemvalue="TestNG.LocationSpec.givenDifferentDirectionWhenEqualsThenFalse" />
+      <item itemvalue="TestNG.LocationSpec.givenDirectionEAndXEqualsMaxXWhenForwardThen1" />
+      <item itemvalue="TestNG.LocationSpec.givenDirectionNAndYEquals1WhenForwardThenMaxY" />
+      <item itemvalue="TestNG.LocationSpec.givenDirectionWAndXEquals1WhenForwardThenMaxX" />
+      <item itemvalue="TestNG.LocationSpec.whenCopyThenDifferentObject" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LocationSpec.givenSameObjectsWhenEqualsThenTrue" />
-        <item itemvalue="TestNG.LocationSpec" />
-        <item itemvalue="TestNG.LocationSpec.givenDirectionNWhenForwardThenYDecreases" />
-        <item itemvalue="TestNG.LocationSpec.givenDifferentXWhenEqualsThenFalse" />
-        <item itemvalue="TestNG.LocationSpec.givenDifferentObjectWhenEqualsThenFalse" />
+        <item itemvalue="TestNG.LocationSpec.givenDirectionNAndYEquals1WhenForwardThenMaxY" />
+        <item itemvalue="TestNG.LocationSpec.givenDirectionWAndXEquals1WhenForwardThenMaxX" />
+        <item itemvalue="TestNG.LocationSpec.givenDirectionEAndXEqualsMaxXWhenForwardThen1" />
+        <item itemvalue="TestNG.LocationSpec.whenCopyThenDifferentObject" />
+        <item itemvalue="TestNG.LocationSpec.givenDifferentDirectionWhenEqualsThenFalse" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-22-openjdk-22-4caba194b151-6fbd92ee" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -276,7 +263,6 @@
       <workItem from="1712737843252" duration="1084000" />
       <workItem from="1713343444968" duration="2839000" />
       <workItem from="1713946714616" duration="6875000" />
-      <workItem from="1714407156959" duration="12146000" />
     </task>
     <task id="LOCAL-00001" summary="COMMIT INICIAL">
       <created>1680163647182</created>
@@ -404,63 +390,7 @@
       <option name="project" value="LOCAL" />
       <updated>1713953905328</updated>
     </task>
-    <task id="LOCAL-00017" summary="COMMIT INICIAL - gitignore">
-      <option name="closed" value="true" />
-      <created>1714408563375</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1714408563375</updated>
-    </task>
-    <task id="LOCAL-00018" summary="COMMIT INICIAL - gitignore">
-      <option name="closed" value="true" />
-      <created>1714408707094</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1714408707094</updated>
-    </task>
-    <task id="LOCAL-00019" summary="COMMIT INICIAL - gitignore">
-      <option name="closed" value="true" />
-      <created>1714408860253</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1714408860253</updated>
-    </task>
-    <task id="LOCAL-00020" summary="COMMIT Ship-Direction - gitignore">
-      <option name="closed" value="true" />
-      <created>1714412277136</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1714412277136</updated>
-    </task>
-    <task id="LOCAL-00021" summary="COMMIT Ship-Direction - gitignore">
-      <option name="closed" value="true" />
-      <created>1714412301031</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1714412301031</updated>
-    </task>
-    <task id="LOCAL-00022" summary="COMMIT Ship-Direction - gitignore">
-      <option name="closed" value="true" />
-      <created>1714416357731</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1714416357731</updated>
-    </task>
-    <task id="LOCAL-00023" summary="COMMIT Ship-Direction - gitignore">
-      <option name="closed" value="true" />
-      <created>1714416524070</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1714416524070</updated>
-    </task>
-    <option name="localTasksCounter" value="24" />
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,8 +439,7 @@
     <MESSAGE value="COMMIT INICIAL - despues de tener AI" />
     <MESSAGE value="COMMIT INICIAL - despues de tener AI - rama 9 y 10" />
     <MESSAGE value="COMMIT INICIAL - gitignore" />
-    <MESSAGE value="COMMIT Ship-Direction - gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMMIT Ship-Direction - gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMMIT INICIAL - gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
