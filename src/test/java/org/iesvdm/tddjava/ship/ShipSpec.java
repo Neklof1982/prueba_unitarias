@@ -45,21 +45,37 @@ public class ShipSpec {
 
     public void whenMoveForwardThenForward() {
 
+        ship.moveForward();
+        assertEquals(ship.getLocation(), location);
+
+
     }
 
     public void whenMoveBackwardThenBackward() {
 
+        ship.moveBackward();
+        assertEquals(ship.getLocation(), location);
+
     }
 
     public void whenTurnLeftThenLeft() {
+        ship.turnLeft();
+        assertEquals(ship.getLocation(), location); 
+        
 
     }
 
     public void whenTurnRightThenRight() {
+        ship.turnRight();
+        assertEquals(ship.getLocation(), location);
 
     }
 
     public void whenReceiveCommandsFThenForward() {
+
+        ship.receiveCommands("f");
+        assertEquals(ship.getLocation(), location);
+
 
     }
 
