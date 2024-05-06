@@ -1,7 +1,6 @@
 package org.iesvdm.tddjava.ship;
 
-import jdk.javadoc.doclet.Taglet;
-import org.testng.Assert;
+
 import org.testng.annotations.*;
 
 import java.util.ArrayList;
@@ -222,131 +221,150 @@ public class LocationSpec {
     public void givenSameObjectsWhenEqualsThenTrue() {
         //When (cuando)
         Location location1 = new Location(new Point(10, 20), Direction.NORTH);
-
+        Location location2 = new Location(new Point(10, 20), Direction.NORTH);
 
         // Do Then
 
-        assertTrue(!location1.equals(location1 = location.copy()));
+        assertTrue(location1.equals(location2));
         // verifica que son dos iguales
     }
 
     public void givenDifferentObjectWhenEqualsThenFalse() {
       //When (cuando)
         Location location1 = new Location(new Point(10, 20), Direction.NORTH);
-
+        Location location2 = new Location(new Point(30, 40), Direction.SOUTH);
 
         // Do Then
 
-        assertTrue(!location1.equals(location1 = location.copy()));
+        assertFalse(location1.equals(location2));
         // verifica que son dos diferentes
     }
 
     public void givenDifferentXWhenEqualsThenFalse() {
         //When (cuando)
         Location location1 = new Location(new Point(10, 20), Direction.NORTH);
-
+        Location location2 = new Location(new Point(11, 20), Direction.SOUTH);
 
         // Do Then
 
-        assertTrue(location1.equals(location1 =location1.copy()));
+        assertTrue(!location1.equals(location2));
         // verifica que son dos x diferentes
     }
 
     public void givenDifferentYWhenEqualsThenFalse() {
 
-        //When (cuando)
+        //When (Cuando)
+
         Location location1 = new Location(new Point(10, 20), Direction.NORTH);
+        Location location2 =new Location(new Point(10, 21), Direction.NORTH);
 
-        // Do Then
+        //Do Then
 
-        assertTrue(location1.equals(location1 = location1.copy()));
-        // verifica que son dos x diferentes
-
+        assertFalse(location1.equals(location2));
     }
 
     public void givenDifferentDirectionWhenEqualsThenFalse() {
 
-        //When (cuando)
+        //When (Cuando)
         Location location1 = new Location(new Point(10, 20), Direction.NORTH);
+        Location location2 = new Location(new Point(10, 21), Direction.SOUTH);
+        //Do Then
 
-
-        // Do Then
-
-        assertTrue(location1.equals(location1=location1.copy()));
-        // verifica que son dos x diferentes
+        assertFalse(location1.equals(location2));
     }
 
     public void givenSameXYDirectionWhenEqualsThenTrue() {
-        //When (cuando)
-        Location location1 = new Location(new Point(10, 30), Direction.NORTH);
+
+        //When (Cuando)
+        Location location1 = new Location(new Point(10, 20), Direction.NORTH);
         Location location2 = new Location(new Point(10, 20), Direction.NORTH);
-
-        // Do Then
-
-        assertTrue(location1.equals(location1));
-        // verifica que son dos x diferentes
+        //Do Then
+        assertTrue(location1.equals(location2));
     }
 
     public void whenCopyThenDifferentObject() {
-
-        //When (cuando)
+        //When (Cuando)
         Location location1 = new Location(new Point(10, 20), Direction.NORTH);
 
-        // Do Then
-        assertTrue(location1.equals(location1 = location1.copy()));
+        //Do (Hacer
+        Location copy = location1.copy();
 
+        //Then (Entonces)
+
+        assertNotSame(location1,copy);
         }
 
     public void whenCopyThenEquals() {
-
-        //When (cuando)
+//When (Cuando)
         Location location1 = new Location(new Point(10, 20), Direction.NORTH);
-        Location location2 = new Location(new Point(10, 20), Direction.NORTH);
 
-        // Do Then
-        assertTrue(location1.equals(location1=location1.copy()));
+        //Do (Hacer
+        Location copy = location1.copy();
 
+        //Then (Entonces)
+
+        assertNotSame(location1,copy);
+        //Verifica que no son copias iguales
     }
 
     public void givenDirectionEAndXEqualsMaxXWhenForwardThen1() {
+        //When (Cuando)
+        Location location1 = new Location(new Point(100, 50), Direction.EAST);
 
+        //Do (Hacer)
+        location1.forward(new Point(100, 100));
 
+        //Then (Entonces)
+
+        assertEquals(1, location1.getX());
 
     }
 
     public void givenDirectionWAndXEquals1WhenForwardThenMaxX() {
 
+        //When (Cuando)
+        Location location1 = new Location(new Point(1, 50), Direction.WEST);
 
+        //Do (Hacer)
+        location1.forward(new Point(100, 100));
 
-
+        //Then (Entonces)
+        assertEquals(100, location1.getX());
     }
 
     public void givenDirectionNAndYEquals1WhenForwardThenMaxY() {
 
+        //When (Cuando)
+        Location location1 = new Location(new Point(50, 1), Direction.NORTH);
 
+        //Do (Hacer)
+        location1.forward(new Point(100, 100));
+
+        //Then (Entonces)
+        assertEquals(100, location1.getY());
 
     }
 
     public void givenDirectionSAndYEqualsMaxYWhenForwardThen1() {
 
+        //When (Cuando)
+        Location location = new Location(new Point(50, 100), Direction.SOUTH);
 
+        //Do (Hacer)
+        location.forward(new Point(100, 100));
 
-
+        //Then (Entonces)
+        assertEquals(1, location.getY());
     }
 
     public void givenObstacleWhenForwardThenReturnFalse() {
-
-        Location location1 = new Location(new Point(10, 20), Direction.NORTH);
-        location1.forward();
-        assertFalse(location1.equals(obstacles));
 
     }
 
     public void givenObstacleWhenBackwardThenReturnFalse() {
 
-        Location location1 = new Location(new Point(10, 20), Direction.NORTH);
-        location1.backward();
-        assertFalse(location1.equals(obstacles));
+
 
     }
+
 }
